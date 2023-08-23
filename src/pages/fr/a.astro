@@ -1,8 +1,5 @@
 ---
-export const prerender = false
 
-const parts = Astro.url.pathname.slice(1).split("/")
-const locale = ['fr'].includes(parts[0]) ? parts[0] : "en"
 ---
 
 <html lang="en">
@@ -11,9 +8,9 @@ const locale = ['fr'].includes(parts[0]) ? parts[0] : "en"
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>404</title>
+    <title>A</title>
   </head>
   <body>
-    <h1>404 ({locale})</h1>
+    <h1>A (fr)</h1>
   </body>
 </html>
